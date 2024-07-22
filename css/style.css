@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: rgb(0, 255, 34);
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(34, 34, 34);
+  overflow: hidden;
+  padding-left: 35rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .user img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid rgb(4, 255, 171);
+}
+
+header .user .name {
+  font-size: 3.5rem;
+  color: white;
+}
+
+header .user .post {
+  font-size: 2rem;
+  color: white;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  display: flex;
+  padding: 1rem 1rem 1rem 9rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+header .navbar ul li a:hover {
+  background: rgb(18, 82, 61);
+}
+
+.navbar i {
+  margin-right: 1rem;
+  margin-top: 3px;
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    left: -120%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  header.toggle {
+    left: 0%;
+  }
+}
+
+/* navbar end */
+
+/* home */
+
+.home {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 22rem 13rem 0 5rem;
+}
+
+.home h1 {
+  font-size: 4rem;
+  color: white;
+  line-height: 15px;
+}
+
+.home h2 {
+  font-size: 7rem;
+  color: white;
+}
+
+.home p {
+  font-size: 1.7rem;
+  color: white;
+  margin-top: -1rem;
+}
+
+.home span {
+  color: rgb(4, 255, 171);
+}
+
+.home i {
+  color: white;
+  background-color: rgb(18, 82, 61);
+  width: 22rem;
+  height: 4rem;
+  padding: 1rem 0 0 3rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  margin: 2rem 0 0 0;
+}
+
+.home h4 {
+  padding-left: 1rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.ter {
+  display: flex;
+  flex-direction: row;  
+  margin-left: 5rem;
+}
+
+.ter i {
+  color: #fff;
+  margin: 3rem 1rem 0 0;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.ter i:hover {
+  color:rgb(4, 255, 171); 
+}
+
+@media (max-width: 800px) {
+  .home {
+    padding: 20rem 3rem;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home h2 {
+    font-size: 4rem;
+  }
+
+  .home h3 {
+    font-size: 1.4rem;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+  }
+
+  .ter { 
+    margin-left: 2rem;
+    margin-top: -16rem;
+  }
+  
+  .ter i {
+    color: #fff;
+    margin: 1rem 1rem 0 0;
+  }
+}
+
+/* home end */
+
+/* profil */
+
+.profil h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20rem;
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.lineprofil {
+  background: #fff;
+  width: 80%;
+  height: 2px;
+  margin: 1rem 0 0 9rem;
+}
+
+.haha1 span {
+  color: rgb(4, 255, 171);
+}
+
+.fil h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 1rem 0 3rem;
+  line-height: 50px;
+  font-weight: 200;
+}
+
+.fil span {
+  color: rgb(4, 255, 171);
+}
+
+.containerfil {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 0 0;
+}
+
+
+.ex h1{
+  text-align: left;
+  margin: 2rem 0 0 3rem;
+}
+
+.ex span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.sekul h1{
+  text-align: left;
+  margin: 2rem 0 0 3rem;
+}
+
+
+
+.sekul span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.kul h3{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0rem 0 0 3rem;
+}
+
+.kul h2{
+  color: rgb(4, 255, 171);
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0rem 0 0 3rem;
+}
+
+
+.ep h2{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0 0 3rem;
+}
+
+
+@media (max-width: 800px) {
+  .lineprofil {
+    margin-left: 5rem;
+  }
+
+  .containerfil {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fil h2 {
+    font-size: 2rem;
+    line-height: 30px;
+    margin: 1rem 0 0 3rem;
+    font-size: 2.4rem;
+  }
+
+  .ex h1{
+    margin: 2rem 0 0 3rem;
+  }
+
+  .ex h2{
+    margin: 1rem 0 0 2rem;
+  }
+
+  .sekul h1{
+    margin: 2rem 0 0 2rem;
+    font-size: 2.5rem;
+  }
+
+  .kul h2{
+    margin: 2rem 0 0 2rem;
+    font-size: 3rem;
+  }
+
+  .kul h3{
+    margin: 1rem 0 0 2rem;
+    font-size: 1.7rem;
+  }
+
+  .ep h2{
+    font-size: 1.7rem;
+  }
+}
+
+/* skill */
+
+.skil h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20rem;
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.lineskil {
+  background: #fff;
+  width: 80%;
+  height: 2px;
+  margin: 1rem 0 0 4rem;
+}
+
+.skil h2{
+  color: #fff;
+  font-size: 3rem;
+  margin: 3rem 0 0 3rem;
+  font-weight: 500;
+}
+
+.skil span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.kotak {
+  background-color: transparent;
+  width: 17rem;
+  height: 5rem;
+  border: 3px solid rgb(18, 82, 61);
+  border-radius: 5px;
+  display: flex;
+  
+}
+
+.kotak h2{
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 6px;
+  font-weight: 400;
+}
+
+.kotak img {
+  height: 3.5rem;
+  width: auto;
+  padding-top: 10px;
+  padding-left: 1rem;
+  margin-right: 1rem;
+}
+
+.jrn h1{
+  color: #fff;
+  font-size: 3rem;
+  margin: 1rem 0 0 3rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.jrn span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.jrn h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 1rem 1rem 0 2rem;
+}
+
+.jaringan span {
+  margin-left: 3rem;
+}
+
+.jaringan span {
+  margin-left: 3rem;
+}
+
+/* app */
+.ap h1{
+  color: #fff;
+  font-size: 3rem;
+  margin: -2rem 0 0 3rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ap span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.wraping {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 5rem;
+}
+
+.app{
+  width: 250px;
+  height: 150px;
+  background: rgb(61, 61, 61);
+  margin: 20px;
+  box-sizing: border-box;
+  transition: 0.6s all;
+  border-radius: 10px;
+}
+
+.app img{
+  width: 12rem;
+  height: auto;
+  margin-left: 6.5rem;
+  margin-top: 1rem;
+}
+
+.app h2{
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 834px){
+  .app img {
+    width: 15rem;
+    margin-left: 6.7rem;
+  }
+}
+
+
+
+@media screen and (max-width: 834px) {
+  .skills {
+      padding: .5rem;
+  }
+
+  .kotak {
+    margin-bottom: 3rem;
+  }
+
+
+}
+
+/* skill end */
+
+/* project */
+
+.project h1{
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.lineprojek {
+  background: #fff;
+  width: 80%;
+  height: 2px;
+  margin: 1rem 0 0 9rem;
+}
+
+.project h2{
+  color: #fff;
+  font-size: 3rem;
+  margin: 3rem 0 0 3rem;
+  font-weight: 500;
+}
+
+.project span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.containereven {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 5rem;
+}
+
+.box {
+  width: 250px;
+  height: 220px;
+  background: rgb(61, 61, 61);
+  margin: 20px;
+  box-sizing: border-box;
+  transition: 0.6s all;
+  border-radius: 10px;
+}
+
+.box h2 {
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.box img {
+  width: 190px;
+  height: auto;
+  position: relative;
+  z-index: 100;
+  margin: -3rem 0 0 3.2rem;
+  border-radius: 10px;
+}
+
+.botom {
+  background: #282936;
+  padding: 10px 2rem;
+  outline: 2.5px solid rgb(4, 255, 171);
+  outline-offset: 3px;
+  border: 0;
+  color: white;
+  border-radius: 100rem;
+  transition: 0.4s;
+  margin: 1.5rem 0 0 3.5rem;
+  width: 170px ;
+  height: 50px;
+}
+
+.botom:hover {
+  outline-offset: 4.5px;
+  background: rgb(32, 58, 49);
+}
+
+.botom h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.iot h2{
+  color: #fff;
+  font-size: 3rem;
+  margin: 3rem 0 0 3rem;
+  font-weight: 500;
+}
+
+.iot span {
+  color: rgb(4, 255, 171);
+  margin-right: 1rem;
+}
+
+.think {
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 834px) {
+
+  .lineprojek {
+    margin-left: 5rem;
+  }
+
+  .botom {
+    margin-left: 4.5rem;
+    width: 150px;
+  }
+
+  .botom h3 {
+    font-size: 1.7rem;
+    padding-top: 5px;
+  }
+
+  .box {
+    margin-top: 5rem;
+  }
+
+}
+
+/* fooetr */
+
+.footer {
+  display: flex;
+  flex-direction: row;  
+  align-items: center; 
+  justify-content: center;
+}
+
+.footer i {
+  color: #fff;
+  margin: 12rem 3rem 0 0;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.footer i:hover {
+  color:rgb(4, 255, 171); 
+}
+
+.kata {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.kata h2{
+  color: #00a0e4;
+  margin: 2rem 3rem 0 0;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: rgb(4, 255, 171) ;
+}
+
+.copy {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.copy h3{
+  color: rgba(255, 255, 255, 0.377);
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 834px) {
+
+  .kata {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
